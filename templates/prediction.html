@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}  Result {% endblock %}
+
+{% block content %}
+
+
+    <center>
+
+        {% if prediction == 1 %}
+            <h1>Your'e comment is spam</h1>
+        {% elif prediction == 0 %}
+            <h1> Not Spam </h1>
+        {% endif %}
+    </center>
+
+{% endblock %}

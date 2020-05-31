@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<form action="{{ url_for('predict')}}" method="POST">
+
+    <p> Enter Your'e Comment Here </p>
+    
+    <textarea name="comment" id="" cols="30" rows="10"></textarea>
+
+    <input type="submit" name="submit" id="submit" value="predict">
+
+
+
+</form>
+
+
+{% endblock %}
